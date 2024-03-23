@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
+body {
+    background-color: #414a2b;
+    margin: 0;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 15px;
+    overflow-x: hidden;
+}
+
+*::-webkit-scrollbar {
+    width: 0;
+}
+
+.container {
+    overflow: hidden;
+    height: max-content;
+
+}
+
+.banner {
+    height: 50vw;
+    position: relative;
+    overflow: hidden;
+}
+
+.banner .bg {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center bottom;
+    transition: 0.1s;
+    
+
+}
+
+.banner .bg:nth-child(1) {
+    background-image: url(images/0.png);
+    height:50vw;
+   
+}
+
+.banner .bg:nth-child(2) {
+    background-image: url(images);
+}
+
+.banner .bg:nth-child(3) {
+    top: 15%;
+    text-align: center;
+    
+}
+
+.banner .bg:nth-child(3) h1,
+.banner .bg:nth-child(3) h5 {
+    color: #d1c3ae;
+    font-size: 30px;
+    margin:0;
+   
+    text-shadow: 0 0px 20px #d2af76;
+}
+
+.banner .bg:nth-child(3) h1 {
+    font-size: 11vw;
+}
+
+.banner .bg:nth-child(4) {
+    
+    
+}
+
+.banner .bg:nth-child(5) {
+    background-image: url(images/ban1.png);
+   height:62vw;
+   margin-bottom: -18%;
+
+}
+
+.tab {
+    min-height: 100vh;
+   
+    z-index: 1;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.tab::before {
+    position: absolute;
+    height: 200px;
+    width: 100%;
+    background: linear-gradient(to top, #414a2b, transparent);
+    content: '';
+    bottom: 100%;
+    left: 0;
+}
+
+.tab.tab1 {
+    background: linear-gradient(to top, #414a2b 0%, transparent 20%, #414a2b 80%), url(https://png.pngtree.com/background/20230618/original/pngtree-low-poly-nature-landscape-a-stunning-3d-render-picture-image_3750140.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+
+.tab.tab2 {
+    background: linear-gradient(to top, #414a2b 0%, transparent 20%, #414a2b 80%), url(https://img.freepik.com/free-vector/green-abstract-background-3d-circle-tiles-vector_53876-156644.jpg?w=900&t=st=1711174544~exp=1711175144~hmac=32a10e0f75355e87a8335ec5fdd0abdfd7dd8ad84d4709c8d95075298d19e679);
+    background-size:cover;
+}
+
+.tab.tab1 .content {
+    width: 700px;
+    max-width: 90%;
+    color: #eee;
+}
+
+.tab.tab2 .content {
+    color: #eee;
+    width: 900px;
+    max-width: 90%;
+}
+
+.tab.tab2 .content .des {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.copyright{
+    height:10px;
+    color:#414a2b;
+}
+.copyright h3{
+    color:black;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.list1{
+    margin-top: 60px;
+    width: 1500px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 450px;
+    gap: 50px;
+    
+}
+.list1 .item1 img{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    object-fit: cover;
+    transition: 0.5s;
+}
+.list1 .item1:hover img{
+    transform: scale(1.2);
+}
+.list1 .item1{
+    color: #c7c3c3;
+    font-family: Poppins;
+    position: relative;
+    transition: 0.5s;
+}
+.list1 .item1 .content1{
+    position: absolute;
+    bottom: 0;
+    color: #fff;
+    padding: 20px;
+    transform: translateY(100px);
+    opacity: 0;
+    transition: 0.5s;
+}
+.list1 .item1:hover .content1{
+    opacity: 1;
+    transform: translateY(0);
+}
+.list1:hover .item1:not(:hover){
+    filter: blur(8px);
+} 
