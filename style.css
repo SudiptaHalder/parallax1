@@ -169,6 +169,7 @@ body {
     border-radius: 20px;
     object-fit: cover;
     transition: 0.5s;
+    margin-left: -15%;
 }
 .list1 .item1:hover img{
     transform: scale(1.2);
